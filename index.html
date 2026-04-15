@@ -3,88 +3,680 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="GPhC 2026 Pre-Registration Assessment revision notes written by a qualified pharmacist. 15 topics covering Cardiovascular, Respiratory, Endocrine, CNS, Law and Ethics and more. From £5 per topic or £39 for the complete bundle.">
-<meta name="keywords" content="GPhC 2026, pre-registration pharmacist, pharmacy revision, GPhC registration assessment, pharmacy notes, pre-reg revision, pharmacist exam 2026">
-<meta name="author" content="Kamini Chauhan, PassRx">
-<meta property="og:title" content="PassRx - GPhC Pre-Registration Revision Notes 2026">
-<meta property="og:description" content="Revision notes written by a practising pharmacist. 15 topics, from £5 each or £39 bundle. GPhC 2026 aligned.">
-<meta property="og:url" content="https://passrx.org">
+<title>PassRx — GPhC Pre-Registration Revision Notes 2026 | Pass First Time</title>
+<meta name="description" content="Clinically written GPhC 2026 Registration Assessment revision notes by a qualified pharmacist. 15 topics, exam-focused, £5 each or £39 bundle.">
+<meta name="keywords" content="GPhC 2026, pre-registration revision, pharmacy pre-reg notes, GPhC registration assessment">
+<meta property="og:title" content="PassRx — GPhC Pre-Registration Revision Notes 2026">
+<meta property="og:description" content="Pass your GPhC. Revision notes by a practising pharmacist. 15 topics, £5 each.">
 <meta property="og:type" content="website">
-<meta name="google-site-verification" content="06s3-P_x06TM_cE3E4MlsZkdroecAVtO560kys9CXNc" />
-<link rel="canonical" href="https://passrx.org">
-<title>PassRx - GPhC Pre-Registration Revision 2026</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-/* FULL CSS FROM YOUR FILE */
-:root{--n:#0d1f3c;--t:#00a99d;--tb:#00e5d6;--tl:#e6f7f6;--c:#faf9f6;--m:#6b7280;--w:#fff;}
+:root{--navy:#0d1f3c;--navy-mid:#1a3560;--teal:#00a99d;--teal-bright:#00e5d6;--teal-light:#e6f7f6;--gold:#c9a84c;--cream:#faf9f6;--text:#1a1a2e;--muted:#6b7280;--white:#ffffff;}
 *{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:"DM Sans",sans-serif;background:var(--c);color:var(--n);overflow-x:hidden;}
-/* (rest of your CSS continues exactly as in your file) */
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);overflow-x:hidden;}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:1.2rem 6%;background:rgba(250,249,246,0.96);backdrop-filter:blur(12px);border-bottom:1px solid rgba(0,0,0,0.07);}
+.logo{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;color:var(--navy);letter-spacing:-0.5px;cursor:pointer;}
+.logo span{color:var(--teal);}
+nav ul{display:flex;gap:2rem;list-style:none;}
+nav ul a{text-decoration:none;color:var(--muted);font-size:0.9rem;font-weight:500;transition:color 0.2s;cursor:pointer;}
+nav ul a:hover{color:var(--navy);}
+.nav-cta{background:var(--navy);color:var(--white)!important;padding:0.55rem 1.4rem;border-radius:6px;font-weight:600!important;}
+
+/* HERO */
+.hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:7rem 6% 4rem;gap:4rem;background:var(--navy);position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;top:-200px;right:-200px;width:700px;height:700px;background:radial-gradient(circle,rgba(0,169,157,0.15) 0%,transparent 70%);pointer-events:none;}
+.hero-badge{display:inline-flex;align-items:center;gap:0.5rem;background:rgba(0,169,157,0.15);border:1px solid rgba(0,169,157,0.3);color:var(--teal);font-size:0.8rem;font-weight:600;padding:0.4rem 1rem;border-radius:100px;margin-bottom:1.5rem;letter-spacing:0.5px;text-transform:uppercase;}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.6rem,4vw,3.8rem);font-weight:700;color:var(--white);line-height:1.15;margin-bottom:1.5rem;}
+.hero h1 em{font-style:normal;color:var(--teal);}
+.hero-text p{font-size:1.1rem;color:rgba(255,255,255,0.65);line-height:1.8;margin-bottom:2.5rem;max-width:480px;font-weight:300;}
+.btn-primary{background:var(--teal);color:var(--white);padding:0.85rem 2rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:0.95rem;transition:all 0.2s;border:2px solid var(--teal);display:inline-block;cursor:pointer;}
+.btn-primary:hover{background:transparent;color:var(--teal);}
+.btn-outline{background:transparent;color:var(--white);padding:0.85rem 2rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:0.95rem;transition:all 0.2s;border:2px solid rgba(255,255,255,0.3);display:inline-block;cursor:pointer;margin-left:1rem;}
+.btn-outline:hover{border-color:white;background:rgba(255,255,255,0.08);}
+.hero-card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:20px;padding:2.5rem;backdrop-filter:blur(10px);}
+.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:2rem;}
+.stat-box{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:1.3rem;text-align:center;}
+.stat-num{font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:700;color:#00e5d6;display:block;}
+.stat-label{color:rgba(255,255,255,0.5);font-size:0.78rem;margin-top:0.3rem;text-transform:uppercase;letter-spacing:0.5px;}
+.card-preview{background:var(--white);border-radius:12px;padding:1.5rem;}
+.card-preview-title{font-family:'Playfair Display',serif;color:var(--navy);font-size:1rem;margin-bottom:1rem;font-weight:600;}
+.topic-pill{display:inline-block;background:var(--teal-light);color:var(--teal);font-size:0.75rem;font-weight:600;padding:0.3rem 0.8rem;border-radius:100px;margin:0.2rem;}
+
+/* TRUST BAR */
+.trust-bar{background:var(--white);border-bottom:1px solid #eee;padding:1.2rem 6%;display:flex;align-items:center;justify-content:center;gap:3rem;flex-wrap:wrap;}
+.trust-item{display:flex;align-items:center;gap:0.6rem;color:var(--muted);font-size:0.85rem;font-weight:500;}
+.trust-item .icon{color:var(--teal);}
+
+/* SECTIONS */
+.product-section{padding:5rem 6%;border-bottom:1px solid #ebebeb;}
+.product-section:nth-child(odd){background:var(--cream);}
+.product-section:nth-child(even){background:var(--white);}
+.section-label{font-size:0.75rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--teal);margin-bottom:0.8rem;}
+.section-title{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3vw,2.4rem);font-weight:700;color:var(--navy);line-height:1.2;margin-bottom:0.8rem;}
+.section-sub{color:var(--muted);font-size:1rem;line-height:1.8;max-width:560px;font-weight:300;margin-bottom:2.5rem;}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;}
+
+/* PRODUCT CARD */
+.product-card{background:var(--white);border:1px solid #e8e8e8;border-radius:16px;overflow:visible;transition:all 0.3s;max-width:520px;}
+.product-card:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(0,0,0,0.08);border-color:var(--teal);}
+.product-top{padding:1.8rem;background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 100%);position:relative;border-radius:16px 16px 0 0;}
+.product-tag{display:inline-block;background:rgba(0,169,157,0.25);color:var(--teal);font-size:0.7rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:0.25rem 0.75rem;border-radius:100px;margin-bottom:1rem;}
+.product-top h3{font-family:'Playfair Display',serif;font-size:1.25rem;color:var(--white);margin-bottom:0.5rem;}
+.product-top p{color:rgba(255,255,255,0.55);font-size:0.85rem;line-height:1.6;}
+.product-includes{padding:1.2rem 1.8rem;display:flex;gap:0.4rem;flex-wrap:wrap;border-bottom:1px solid #f3f4f6;}
+.include-tag{background:#f3f4f6;color:#374151;font-size:0.72rem;padding:0.25rem 0.7rem;border-radius:6px;}
+.product-bottom{padding:1.5rem 1.8rem;position:relative;}
+.product-price{font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--navy);margin-bottom:1rem;}
+.product-price span{font-size:0.85rem;font-family:'DM Sans',sans-serif;color:var(--muted);font-weight:400;}
+.saving-badge{display:inline-block;background:var(--teal-light);color:var(--teal);font-size:0.78rem;font-weight:600;padding:0.2rem 0.7rem;border-radius:6px;margin-left:0.5rem;vertical-align:middle;}
+
+/* DELIVERY NOTICE */
+.delivery-notice{background:#fffbeb;border:1px solid #fde68a;border-radius:10px;padding:0.9rem 1.2rem;margin-bottom:1.2rem;display:flex;align-items:flex-start;gap:0.7rem;}
+.delivery-notice .dn-icon{font-size:1.1rem;flex-shrink:0;margin-top:1px;}
+.delivery-notice p{font-size:0.82rem;color:#92400e;line-height:1.6;}
+.delivery-notice strong{color:#78350f;}
+
+/* DROPDOWN */
+.dropdown-wrap{position:relative;margin-bottom:12px;z-index:100;}
+.dropdown-trigger{width:100%;padding:10px 14px;border:1.5px solid #d1d5db;border-radius:8px;font-size:0.9rem;font-family:'DM Sans',sans-serif;background:var(--white);color:var(--text);cursor:pointer;user-select:none;display:flex;align-items:center;justify-content:space-between;transition:border-color 0.2s;}
+.dropdown-trigger:hover,.dropdown-trigger.open{border-color:var(--teal);}
+.dropdown-trigger.open{border-radius:8px 8px 0 0;border-bottom-color:transparent;}
+.dropdown-trigger-label{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--muted);}
+.dropdown-trigger-label.has-selection{color:var(--text);font-weight:500;}
+.dropdown-chevron{margin-left:8px;font-size:0.65rem;color:var(--muted);transition:transform 0.2s;flex-shrink:0;}
+.dropdown-trigger.open .dropdown-chevron{transform:rotate(180deg);}
+.dropdown-panel{display:none;position:absolute;top:100%;left:0;right:0;background:var(--white);border:1.5px solid var(--teal);border-top:none;border-radius:0 0 10px 10px;max-height:300px;overflow-y:auto;box-shadow:0 10px 28px rgba(0,0,0,0.12);}
+.dropdown-panel.open{display:block;}
+.dropdown-option{display:flex;align-items:center;gap:10px;padding:9px 14px;cursor:pointer;transition:background 0.12s;border-bottom:1px solid #f5f5f5;}
+.dropdown-option:last-child{border-bottom:none;}
+.dropdown-option:hover{background:var(--teal-light);}
+.dropdown-option.is-checked{background:var(--teal-light);}
+.option-cb{width:16px;height:16px;border-radius:4px;border:1.5px solid #d1d5db;background:white;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all 0.15s;}
+.dropdown-option.is-checked .option-cb{background:var(--teal);border-color:var(--teal);}
+.option-cb-tick{color:white;font-size:0.65rem;font-weight:700;opacity:0;}
+.dropdown-option.is-checked .option-cb-tick{opacity:1;}
+.option-text{flex:1;}
+.option-name{display:block;font-size:0.85rem;font-weight:600;color:var(--navy);}
+.option-sub{display:block;font-size:0.7rem;color:var(--muted);margin-top:1px;}
+
+/* ORDER SUMMARY */
+.order-summary{background:#f9fafb;border:1px solid #ebebeb;border-radius:8px;padding:10px 14px;margin-bottom:12px;display:none;}
+.order-summary.visible{display:block;}
+.order-summary-heading{font-size:0.7rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px;}
+.order-row{display:flex;align-items:center;justify-content:space-between;padding:3px 0;font-size:0.82rem;gap:6px;}
+.order-row-name{color:var(--text);flex:1;}
+.order-row-price{color:var(--navy);font-weight:600;flex-shrink:0;}
+.order-row-x{color:#d1d5db;cursor:pointer;font-size:0.85rem;padding:0 3px;transition:color 0.15s;flex-shrink:0;}
+.order-row-x:hover{color:#e53e3e;}
+.order-total-row{display:flex;justify-content:space-between;padding-top:8px;margin-top:6px;border-top:1px solid #e5e7eb;font-size:0.88rem;font-weight:700;color:var(--navy);}
+.bundle-upgrade-note{background:rgba(0,169,157,0.1);border:1px solid rgba(0,169,157,0.3);border-radius:6px;padding:6px 10px;font-size:0.75rem;color:var(--teal);font-weight:600;margin-top:8px;text-align:center;display:none;}
+.checkout-btn{width:100%;padding:0.85rem;background:var(--teal);color:white;border:none;border-radius:8px;font-size:0.95rem;font-weight:700;cursor:pointer;transition:all 0.2s;font-family:'DM Sans',sans-serif;margin-top:4px;}
+.checkout-btn:hover:not(:disabled){background:#008f84;}
+.checkout-btn:disabled{background:#d1d5db;cursor:not-allowed;}
+
+/* PRICING LADDER */
+.price-ladder{display:flex;flex-direction:column;gap:0.6rem;margin-bottom:2rem;}
+.price-rung{display:flex;align-items:center;gap:0.8rem;font-size:0.9rem;color:var(--muted);}
+.price-badge{padding:0.2rem 0.75rem;border-radius:6px;font-weight:600;font-size:0.8rem;flex-shrink:0;min-width:80px;text-align:center;}
+.price-badge.normal{background:var(--teal-light);color:var(--teal);}
+.price-badge.best{background:var(--teal);color:white;}
+
+/* FAQ */
+.faq-section{padding:5rem 6%;background:var(--white);}
+.faq-list{max-width:700px;margin:0 auto;}
+.faq-item{border-bottom:1px solid #ebebeb;}
+.faq-q{display:flex;align-items:center;justify-content:space-between;padding:1.2rem 0;cursor:pointer;font-weight:600;color:var(--navy);font-size:0.95rem;gap:1rem;}
+.faq-icon{color:var(--teal);font-size:1.2rem;flex-shrink:0;transition:transform 0.2s;}
+.faq-item.open .faq-icon{transform:rotate(45deg);}
+.faq-a{max-height:0;overflow:hidden;transition:max-height 0.3s ease;color:var(--muted);font-size:0.9rem;line-height:1.8;}
+.faq-item.open .faq-a{max-height:300px;padding-bottom:1.2rem;}
+
+/* CONTACT */
+.contact-section{padding:5rem 6%;background:var(--cream);text-align:center;}
+.contact-email{display:inline-flex;align-items:center;gap:0.6rem;background:var(--white);border:1px solid #e8e8e8;border-radius:10px;padding:0.8rem 1.5rem;font-weight:600;color:var(--navy);text-decoration:none;font-size:0.95rem;transition:all 0.2s;}
+.contact-email:hover{border-color:var(--teal);color:var(--teal);}
+
+/* FOOTER */
+footer{background:var(--navy);color:rgba(255,255,255,0.5);padding:2.5rem 6%;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;}
+.footer-logo{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:white;}
+.footer-logo span{color:var(--teal);}
+.footer-links{display:flex;gap:1.5rem;}
+.footer-links a{color:rgba(255,255,255,0.5);text-decoration:none;font-size:0.85rem;cursor:pointer;transition:color 0.2s;}
+.footer-links a:hover{color:white;}
+.footer-copy{font-size:0.8rem;}
+
+/* BROWSE PAGE */
+#topics-page{display:none;min-height:100vh;background:var(--navy);}
+.topics-nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:1.2rem 6%;background:rgba(13,31,60,0.96);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,0.08);}
+.topics-header{padding:8rem 6% 2rem;text-align:center;}
+.topics-header h1{font-family:'Playfair Display',serif;font-size:2.5rem;color:white;margin-bottom:0.5rem;}
+.topics-header p{color:rgba(255,255,255,0.5);font-size:1rem;}
+.topics-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(195px,1fr));gap:20px;padding:1rem 6% 3rem;}
+.tc{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:16px;overflow:hidden;transition:all 0.25s;cursor:pointer;}
+.tc:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(0,0,0,0.4);}
+.tc-top{height:130px;display:flex;align-items:center;justify-content:center;}
+.tc-top svg{width:76px;height:76px;filter:drop-shadow(0 4px 16px rgba(0,0,0,0.4));}
+.tc-label{padding:14px 16px;border-top:1px solid rgba(255,255,255,0.06);background:rgba(255,255,255,0.03);}
+.tc-num{display:block;font-size:0.62rem;color:#00a99d;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:3px;}
+.tc-name{font-size:0.88rem;font-weight:600;color:rgba(255,255,255,0.9);display:block;}
+.tc-sub{font-size:0.7rem;color:rgba(255,255,255,0.4);margin-top:2px;display:block;}
+.tc-price{display:inline-block;background:#00a99d;color:white;font-size:0.7rem;font-weight:700;padding:0.18rem 0.65rem;border-radius:6px;margin-top:6px;}
+.bundle-bar{margin:0 6% 4rem;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:2rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap;}
+.bundle-bar h3{font-family:'Playfair Display',serif;color:white;font-size:1.3rem;margin-bottom:0.3rem;}
+.bundle-bar p{color:rgba(255,255,255,0.5);font-size:0.9rem;}
+.dark-footer{background:rgba(255,255,255,0.04);border-top:1px solid rgba(255,255,255,0.08);}
+
+/* ABOUT PAGE */
+#about-page{display:none;min-height:100vh;}
+.about-hero{background:var(--navy);padding:8rem 6% 4rem;position:relative;overflow:hidden;}
+.about-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 80% 50%,rgba(0,169,157,0.15),transparent 60%);pointer-events:none;}
+.about-hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,4vw,3.2rem);color:white;line-height:1.2;margin-bottom:1rem;}
+.about-hero h1 em{font-style:normal;color:var(--teal);}
+.about-hero p{color:rgba(255,255,255,0.6);font-size:1rem;max-width:500px;line-height:1.8;}
+.profile-section{padding:4rem 6%;background:var(--white);}
+.profile-inner{display:grid;grid-template-columns:auto 1fr;gap:3rem;align-items:start;max-width:900px;}
+.profile-avatar{width:100px;height:100px;border-radius:50%;background:linear-gradient(135deg,var(--teal),var(--navy-mid));display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:2.5rem;color:white;flex-shrink:0;}
+.profile-name{font-family:'Playfair Display',serif;font-size:1.6rem;color:var(--navy);font-weight:700;margin-bottom:0.3rem;}
+.profile-title{color:var(--teal);font-size:0.85rem;font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:1.2rem;}
+.profile-bio p{color:var(--muted);line-height:1.9;font-size:0.95rem;margin-bottom:1rem;}
+.profile-stats{display:flex;gap:2rem;margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid #ebebeb;}
+.profile-stats .pstat-num{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:700;color:var(--teal);display:block;}
+.profile-stats .pstat-label{font-size:0.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.5px;}
+.why-section{padding:4rem 6%;background:var(--cream);}
+.why-section .wh-title{font-family:'Playfair Display',serif;font-size:2rem;color:var(--navy);margin-bottom:0.5rem;}
+.why-section .wh-sub{color:var(--muted);margin-bottom:2rem;font-size:1rem;}
+.why-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1.5rem;}
+.why-card{background:var(--white);border:1px solid #e8e8e8;border-radius:14px;padding:1.8rem;transition:all 0.2s;}
+.why-card:hover{border-color:var(--teal);transform:translateY(-3px);}
+.why-icon{font-size:1.8rem;margin-bottom:1rem;}
+.why-title{font-weight:700;color:var(--navy);margin-bottom:0.5rem;}
+.why-text{color:var(--muted);font-size:0.88rem;line-height:1.7;}
+.about-cta{background:var(--navy);padding:3rem 6%;text-align:center;}
+.about-cta h2{font-family:'Playfair Display',serif;color:white;font-size:1.8rem;margin-bottom:0.8rem;}
+.about-cta p{color:rgba(255,255,255,0.5);margin-bottom:1.5rem;}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .hero{grid-template-columns:1fr;padding:6rem 5% 3rem;}
+  .two-col{grid-template-columns:1fr;}
+  .profile-inner{grid-template-columns:1fr;}
+  nav ul{gap:1rem;}
+  .btn-outline{margin-left:0;margin-top:0.8rem;display:block;text-align:center;}
+  .bundle-bar{flex-direction:column;text-align:center;}
+  .topics-grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));}
+}
 </style>
 </head>
-
 <body>
 
-<div id="home" class="page active">
-<nav>
-  <div class="logo" onclick="go('home')">Pass<b>Rx</b></div>
-  <ul class="nav-links">
-    <li><a onclick="go('home')">Home</a></li>
-    <li><a onclick="go('browse')">Browse All</a></li>
-    <li><a onclick="go('about')">About</a></li>
-    <li><a href="/cdn-cgi/l/email-protection#" class="nav-btn">Contact</a></li>
+<!-- ═══════════════════════════ MAIN PAGE ═══════════════════════════ -->
+<div id="main-page">
+
+<nav id="main-nav">
+  <div class="logo" onclick="showMain()">Pass<span>Rx</span></div>
+  <ul>
+    <li><a onclick="showMain()">Home</a></li>
+    <li><a onclick="showTopics()">Browse All</a></li>
+    <li><a onclick="showAbout()">About</a></li>
+    <li><a href="mailto:primenotesedu@gmail.com" class="nav-cta">Contact</a></li>
   </ul>
 </nav>
 
-<!-- FULL HTML CONTENT -->
-<!-- (Hero, sections, cards, FAQ, footer — unchanged from your original file) -->
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <div class="hero-badge">✦ GPhC Registration Assessment 2026</div>
+    <h1>Pass Your GPhC.<br><em>First Time.</em></h1>
+    <p>Revision notes written by a practising pharmacist — not a textbook. Clinically accurate, exam-focused, and built around the GPhC 2026 blueprint.</p>
+    <a class="btn-primary" onclick="showTopics()">Browse All 15 Topics →</a>
+    <a class="btn-outline" href="https://buy.stripe.com/3cIfZaaqwaRj9Z3gF55kk00" target="_blank">Get Full Bundle — £39</a>
+  </div>
+  <div class="hero-card">
+    <div class="stat-grid">
+      <div class="stat-box"><span class="stat-num">15</span><span class="stat-label">Topics Covered</span></div>
+      <div class="stat-box"><span class="stat-num">£5</span><span class="stat-label">Per Topic</span></div>
+      <div class="stat-box"><span class="stat-num">£39</span><span class="stat-label">Full Bundle</span></div>
+      <div class="stat-box"><span class="stat-num">GPhC</span><span class="stat-label">2026 Aligned</span></div>
+    </div>
+    <div class="card-preview">
+      <div class="card-preview-title">Topics include:</div>
+      <span class="topic-pill">Cardiovascular</span><span class="topic-pill">Calculations</span><span class="topic-pill">Law &amp; Ethics</span><span class="topic-pill">Respiratory</span><span class="topic-pill">Endocrine</span><span class="topic-pill">CNS</span><span class="topic-pill">Infections</span><span class="topic-pill">+ 8 more</span>
+    </div>
+  </div>
+</section>
 
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-item"><span class="icon">✓</span> Written by a qualified pharmacist</div>
+  <div class="trust-item"><span class="icon">✓</span> GPhC 2026 blueprint aligned</div>
+  <div class="trust-item"><span class="icon">✓</span> Instant PDF delivery</div>
+  <div class="trust-item"><span class="icon">✓</span> 15 topics covered</div>
 </div>
 
-<div id="browse" class="page">
-<!-- FULL BROWSE PAGE CONTENT -->
+<!-- INDIVIDUAL TOPICS -->
+<section class="product-section">
+  <div class="two-col">
+    <div>
+      <div class="section-label">Individual Topics</div>
+      <div class="section-title">Pick exactly what you need</div>
+      <div class="section-sub">Struggling with a specific area? Buy only the topics you need. The price scales automatically — and 6 or more topics upgrades you to the full bundle at £39.</div>
+      <div class="price-ladder">
+        <div class="price-rung"><span class="price-badge normal">1 topic</span> £5</div>
+        <div class="price-rung"><span class="price-badge normal">2 topics</span> £10</div>
+        <div class="price-rung"><span class="price-badge normal">3 topics</span> £15</div>
+        <div class="price-rung"><span class="price-badge normal">4 topics</span> £20</div>
+        <div class="price-rung"><span class="price-badge normal">5 topics</span> £25</div>
+        <div class="price-rung"><span class="price-badge best">6+ topics</span> £39 bundle — best value</div>
+      </div>
+    </div>
+    <div>
+      <div class="product-card">
+        <div class="product-top">
+          <div class="product-tag">Individual Topics</div>
+          <h3>Choose Your Topics</h3>
+          <p>Select from the dropdown below. Price updates as you go.</p>
+        </div>
+        <div class="product-bottom">
+          <div class="delivery-notice">
+            <div class="dn-icon">📧</div>
+            <p><strong>Delivery:</strong> After payment, email your receipt to <strong>primenotesedu@gmail.com</strong> and your PDFs will be sent within a few hours.</p>
+          </div>
+          <div class="dropdown-wrap">
+            <div class="dropdown-trigger" id="dd-trigger" onclick="toggleDropdown()">
+              <span class="dropdown-trigger-label" id="dd-label">Select topics…</span>
+              <span class="dropdown-chevron">▼</span>
+            </div>
+            <div class="dropdown-panel" id="dd-panel"></div>
+          </div>
+          <div class="order-summary" id="order-summary">
+            <div class="order-summary-heading">Your order</div>
+            <div id="order-rows"></div>
+            <div class="order-total-row"><span>Total</span><span id="order-total">£0</span></div>
+            <div class="bundle-upgrade-note" id="bundle-note">🎉 6+ topics — upgraded to bundle price £39!</div>
+          </div>
+          <button class="checkout-btn" id="checkout-btn" onclick="doCheckout()" disabled>Select topics to continue</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BUNDLE -->
+<section class="product-section">
+  <div class="two-col">
+    <div>
+      <div class="section-label">Complete Bundle</div>
+      <div class="section-title">Everything you need.<br>One price.</div>
+      <div class="section-sub">All 15 topics covering every area of the GPhC Registration Assessment. Written by a practising pharmacist with 11 years of clinical experience.</div>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:0.6rem;margin-bottom:2rem;">
+        <li style="display:flex;align-items:center;gap:0.6rem;color:var(--muted);font-size:0.9rem;"><span style="color:var(--teal);font-weight:700;">✓</span> All 15 PDF revision notes</li>
+        <li style="display:flex;align-items:center;gap:0.6rem;color:var(--muted);font-size:0.9rem;"><span style="color:var(--teal);font-weight:700;">✓</span> Pharmacist notes — what we see in practice</li>
+        <li style="display:flex;align-items:center;gap:0.6rem;color:var(--muted);font-size:0.9rem;"><span style="color:var(--teal);font-weight:700;">✓</span> Exam tips throughout every topic</li>
+        <li style="display:flex;align-items:center;gap:0.6rem;color:var(--muted);font-size:0.9rem;"><span style="color:var(--teal);font-weight:700;">✓</span> Drug summary tables &amp; quick references</li>
+        <li style="display:flex;align-items:center;gap:0.6rem;color:var(--muted);font-size:0.9rem;"><span style="color:var(--teal);font-weight:700;">✓</span> GPhC 2026 aligned throughout</li>
+      </ul>
+    </div>
+    <div>
+      <div class="product-card">
+        <div class="product-top">
+          <div class="product-tag">Best Value</div>
+          <h3>Complete Bundle — All 15 Topics</h3>
+          <p>Every GPhC topic in one purchase.</p>
+        </div>
+        <div class="product-includes">
+          <span class="include-tag">Cardiovascular</span><span class="include-tag">Calculations</span><span class="include-tag">Law &amp; Ethics</span><span class="include-tag">Respiratory</span><span class="include-tag">Endocrine</span><span class="include-tag">GI Medicine</span><span class="include-tag">Infections</span><span class="include-tag">CNS</span><span class="include-tag">Pain</span><span class="include-tag">Renal</span><span class="include-tag">MSK</span><span class="include-tag">Women's Health</span><span class="include-tag">Haematology</span><span class="include-tag">Dermatology</span><span class="include-tag">Clinical Pharmacy</span>
+        </div>
+        <div class="product-bottom">
+          <div class="product-price">£39 <span>all 15 topics</span><span class="saving-badge">Save £36</span></div>
+          <div class="delivery-notice">
+            <div class="dn-icon">📧</div>
+            <p><strong>Delivery:</strong> After payment, email your receipt to <strong>primenotesedu@gmail.com</strong> and your PDFs will be sent within a few hours.</p>
+          </div>
+          <a href="https://buy.stripe.com/3cIfZaaqwaRj9Z3gF55kk00" target="_blank" class="btn-primary" style="display:block;text-align:center;width:100%;padding:0.85rem;">Get Complete Bundle — £39 →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div style="text-align:center;margin-bottom:2.5rem;">
+    <div class="section-label">FAQ</div>
+    <div class="section-title">Common Questions</div>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">How do I receive my notes after purchase? <span class="faq-icon">+</span></div>
+      <div class="faq-a">After completing payment, email your receipt to <strong>primenotesedu@gmail.com</strong> stating which topics you purchased. Your PDFs will be sent to you within a few hours.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Are the notes aligned to the GPhC 2026 Registration Assessment? <span class="faq-icon">+</span></div>
+      <div class="faq-a">Yes. All 15 topics are cross-referenced against the GPhC 2026 Registration Assessment blueprint, current NICE guidelines, and the BNF.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Who wrote these notes? <span class="faq-icon">+</span></div>
+      <div class="faq-a">All notes are written by Kamini Chauhan, a qualified community pharmacist with 11 years of clinical experience. These reflect real clinical practice and what the GPhC assessment actually tests.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Can I buy individual topics? <span class="faq-icon">+</span></div>
+      <div class="faq-a">Yes — each topic is £5. Selecting 6 or more topics automatically upgrades you to the full bundle at £39. Use the topic selector above to choose exactly what you need.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">What format are the notes? <span class="faq-icon">+</span></div>
+      <div class="faq-a">All notes are delivered as PDF files, formatted for easy reading on screen or printing, with tables, exam tips, drug summaries, and pharmacist notes throughout.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Can I get a refund? <span class="faq-icon">+</span></div>
+      <div class="faq-a">As these are digital products, refunds cannot be offered once PDFs have been delivered. If you have any concerns, contact us at primenotesedu@gmail.com and we will do our best to help.</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section">
+  <div class="section-label">Get in Touch</div>
+  <div class="section-title" style="margin-bottom:0.8rem;">Any questions?</div>
+  <p style="color:var(--muted);margin-bottom:1.5rem;">We typically reply within a few hours.</p>
+  <a href="mailto:primenotesedu@gmail.com" class="contact-email">✉ primenotesedu@gmail.com</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Pass<span>Rx</span></div>
+  <div class="footer-links">
+    <a onclick="showMain()">Home</a>
+    <a onclick="showTopics()">Browse All</a>
+    <a onclick="showAbout()">About</a>
+    <a href="mailto:primenotesedu@gmail.com">Contact</a>
+  </div>
+  <div class="footer-copy">© 2026 PassRx. All rights reserved.</div>
+</footer>
+
+</div><!-- /main-page -->
+
+
+<!-- ═══════════════════════════ BROWSE PAGE ═══════════════════════════ -->
+<div id="topics-page">
+  <nav class="topics-nav">
+    <div class="logo" onclick="showMain()" style="color:white;">Pass<span>Rx</span></div>
+    <ul>
+      <li><a onclick="showMain()" style="color:rgba(255,255,255,0.6);">Home</a></li>
+      <li><a onclick="showTopics()" style="color:white;font-weight:600;">Browse All</a></li>
+      <li><a onclick="showAbout()" style="color:rgba(255,255,255,0.6);">About</a></li>
+      <li><a href="mailto:primenotesedu@gmail.com" class="nav-cta">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="topics-header">
+    <div class="section-label" style="justify-content:center;display:block;">All Topics</div>
+    <h1>Browse All 15 Topics</h1>
+    <p>Click any topic to purchase for £5, or get all 15 for £39 with the bundle.</p>
+  </div>
+  <div class="topics-grid" id="topics-grid"></div>
+  <div class="bundle-bar">
+    <div>
+      <h3>Get all 15 topics for just £39</h3>
+      <p>Save £36 compared to buying individually.</p>
+    </div>
+    <a href="https://buy.stripe.com/3cIfZaaqwaRj9Z3gF55kk00" target="_blank" class="btn-primary">Get Complete Bundle — £39 →</a>
+  </div>
+  <footer class="dark-footer" style="color:rgba(255,255,255,0.4);padding:2rem 6%;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
+    <div class="footer-logo">Pass<span>Rx</span></div>
+    <div class="footer-links"><a onclick="showMain()">Home</a><a href="mailto:primenotesedu@gmail.com">Contact</a></div>
+    <div class="footer-copy">© 2026 PassRx</div>
+  </footer>
 </div>
 
-<div id="about" class="page">
-<!-- FULL ABOUT PAGE CONTENT -->
+
+<!-- ═══════════════════════════ ABOUT PAGE ═══════════════════════════ -->
+<div id="about-page">
+  <nav>
+    <div class="logo" onclick="showMain()">Pass<span>Rx</span></div>
+    <ul>
+      <li><a onclick="showMain()">Home</a></li>
+      <li><a onclick="showTopics()">Browse All</a></li>
+      <li><a onclick="showAbout()" style="color:var(--navy);font-weight:600;">About</a></li>
+      <li><a href="mailto:primenotesedu@gmail.com" class="nav-cta">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="about-hero">
+    <div class="section-label">About</div>
+    <h1>Meet Your<br><em>Pharmacist.</em></h1>
+    <p>PassRx was built by a practising pharmacist who understands exactly what the GPhC Registration Assessment demands — and what it takes to pass it.</p>
+  </div>
+
+  <section class="profile-section">
+    <div class="profile-inner">
+      <div class="profile-avatar">K</div>
+      <div>
+        <div class="profile-name">Kamini Chauhan</div>
+        <div class="profile-title">Qualified Community Pharmacist — 11 Years Experience</div>
+        <div class="profile-bio">
+          <p>I'm Kamini Chauhan, a qualified community pharmacist with 11 years of clinical experience. I created PassRx to give pre-registration pharmacists the revision resource I wished I'd had — clinically accurate, exam-focused, and written by someone who understands pharmacy from the inside. Every topic is grounded in real practice and aligned to the GPhC 2026 Registration Assessment framework.</p>
+        </div>
+        <div class="profile-stats">
+          <div><span class="pstat-num">11+</span><span class="pstat-label">Years practising</span></div>
+          <div><span class="pstat-num">15</span><span class="pstat-label">Topics written</span></div>
+          <div><span class="pstat-num">GPhC</span><span class="pstat-label">2026 aligned</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why-section">
+    <div class="section-label">The Approach</div>
+    <div class="wh-title">Why PassRx is Different</div>
+    <div class="wh-sub">These aren't generic revision notes — they're written by someone who works in pharmacy every day.</div>
+    <div class="why-grid">
+      <div class="why-card"><div class="why-icon">⚕</div><div class="why-title">Clinically Grounded</div><div class="why-text">Every topic reflects how drugs are actually used in practice — not just textbook theory. Written with 11 years of community pharmacy experience.</div></div>
+      <div class="why-card"><div class="why-icon">📋</div><div class="why-title">Exam Focused</div><div class="why-text">Content mapped directly to the GPhC 2026 Registration Assessment blueprint. No filler — only what the exam tests.</div></div>
+      <div class="why-card"><div class="why-icon">📖</div><div class="why-title">Clearly Written</div><div class="why-text">Complex clinical topics broken down into plain, readable language. Designed to be understood, not just read.</div></div>
+      <div class="why-card"><div class="why-icon">✓</div><div class="why-title">Up to Date</div><div class="why-text">Cross-referenced against current NICE guidelines, the BNF, and the GPhC 2026 Registration Assessment Framework.</div></div>
+    </div>
+  </section>
+
+  <div class="about-cta">
+    <h2>Ready to Start Revising?</h2>
+    <p>Browse all 15 topics or get the complete bundle.</p>
+    <a onclick="showTopics()" class="btn-primary" style="margin-right:1rem;">Browse All Topics →</a>
+    <a href="https://buy.stripe.com/3cIfZaaqwaRj9Z3gF55kk00" target="_blank" class="btn-outline">Get Full Bundle — £39</a>
+  </div>
+
+  <footer>
+    <div class="footer-logo">Pass<span>Rx</span></div>
+    <div class="footer-links">
+      <a onclick="showMain()">Home</a>
+      <a onclick="showTopics()">Browse All</a>
+      <a href="mailto:primenotesedu@gmail.com">Contact</a>
+    </div>
+    <div class="footer-copy">© 2026 PassRx. All rights reserved.</div>
+  </footer>
 </div>
+
 
 <script>
-/* FULL JAVASCRIPT FROM YOUR FILE */
-var TT = [
-  {i:"01",n:"Cardiovascular Medicine"},
-  {i:"02",n:"Pharmacy Calculations"},
-  {i:"03",n:"Law Ethics and MEP"},
-  {i:"04",n:"Respiratory Medicine"},
-  {i:"05",n:"Endocrine and Metabolic"},
-  {i:"06",n:"Gastrointestinal Medicine"},
-  {i:"07",n:"Infections and Antimicrobials"},
-  {i:"08",n:"Central Nervous System"},
-  {i:"09",n:"Pain Management"},
-  {i:"10",n:"Renal Medicine"},
-  {i:"11",n:"Musculoskeletal Medicine"},
-  {i:"12",n:"Womens Health"},
-  {i:"13",n:"Haematology and Oncology"},
-  {i:"14",n:"Dermatology"},
-  {i:"15",n:"Clinical Pharmacy"}
+// ── TOPICS DATA ──
+var TOPICS = [
+  {id:'01',name:'Cardiovascular Medicine',sub:'Heart failure, ACS, hypertension, AF',bg:'linear-gradient(135deg,#1a0505,#3d0f0f)',svg:'<path d="M40 68S10 50 10 28a16 16 0 0 1 30-6 16 16 0 0 1 30 6c0 22-30 40-30 40z" fill="#ef5350"/><path d="M20 36h8l5-10 8 20 5-10h14" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>'},
+  {id:'02',name:'Pharmacy Calculations',sub:'Doses, infusions, displacement values',bg:'linear-gradient(135deg,#050d1a,#0d2550)',svg:'<rect x="16" y="8" width="48" height="64" rx="8" fill="#1976d2"/><rect x="22" y="14" width="36" height="18" rx="4" fill="white" opacity="0.95"/><text x="40" y="28" text-anchor="middle" fill="#1976d2" font-size="12" font-weight="800" font-family="sans-serif">\u00a3 = %</text><circle cx="27" cy="48" r="5" fill="white" opacity="0.9"/><circle cx="40" cy="48" r="5" fill="white" opacity="0.9"/><circle cx="53" cy="48" r="5" fill="white" opacity="0.9"/><circle cx="27" cy="62" r="5" fill="white" opacity="0.9"/><circle cx="40" cy="62" r="5" fill="white" opacity="0.9"/><rect x="48" y="57" width="10" height="10" rx="2" fill="#ffd54f"/>'},
+  {id:'03',name:'Law, Ethics &amp; MEP',sub:'Drug schedules, GPhC standards, MEP',bg:'linear-gradient(135deg,#1a1400,#3a2e00)',svg:'<line x1="40" y1="10" x2="40" y2="70" stroke="#c9a84c" stroke-width="3" stroke-linecap="round"/><line x1="15" y1="20" x2="65" y2="20" stroke="#c9a84c" stroke-width="3" stroke-linecap="round"/><circle cx="40" cy="10" r="5" fill="#c9a84c"/><line x1="15" y1="20" x2="8" y2="44" stroke="white" stroke-width="2" stroke-linecap="round"/><line x1="65" y1="20" x2="72" y2="44" stroke="white" stroke-width="2" stroke-linecap="round"/><ellipse cx="8" cy="46" rx="9" ry="5" fill="#c9a84c" opacity="0.9"/><ellipse cx="72" cy="46" rx="9" ry="5" fill="#c9a84c" opacity="0.9"/><rect x="35" y="68" width="10" height="4" rx="2" fill="#c9a84c" opacity="0.6"/>'},
+  {id:'04',name:'Respiratory Medicine',sub:'Asthma, COPD, inhaler devices',bg:'linear-gradient(135deg,#000a14,#001a2e)',svg:'<rect x="37" y="6" width="6" height="68" rx="3" fill="white" opacity="0.06"/><path d="M37 18 Q26 16 18 22" stroke="white" stroke-width="1" fill="none" opacity="0.1"/><path d="M37 28 Q24 25 14 32" stroke="white" stroke-width="1" fill="none" opacity="0.1"/><path d="M37 38 Q23 35 13 42" stroke="white" stroke-width="1" fill="none" opacity="0.1"/><path d="M37 48 Q23 45 15 52" stroke="white" stroke-width="1" fill="none" opacity="0.1"/><path d="M43 18 Q54 16 62 22" stroke="white" stroke-width="1" fill="none" opacity="0.1"/><path d="M43 28 Q56 25 66 32" stroke="white" stroke-width="1" fill="none" opacity="0.1"/><path d="M43 38 Q57 35 67 42" stroke="white" stroke-width="1" fill="none" opacity="0.1"/><path d="M43 48 Q57 45 65 52" stroke="white" stroke-width="1" fill="none" opacity="0.1"/><rect x="36" y="4" width="8" height="16" rx="4" fill="none" stroke="#00e5d6" stroke-width="1.5"/><path d="M36 18 Q28 22 24 30 Q10 32 8 44 Q6 56 10 64 Q14 72 22 74 Q30 76 34 64 Q36 56 36 46 L36 18Z" fill="#0288d1" opacity="0.12" stroke="#29b6f6" stroke-width="1"/><path d="M44 18 Q52 22 56 30 Q70 32 72 44 Q74 56 70 64 Q66 72 58 74 Q50 76 46 64 Q44 56 44 46 L44 18Z" fill="#0288d1" opacity="0.12" stroke="#29b6f6" stroke-width="1"/><path d="M36 18 Q30 22 26 30" stroke="#00e5d6" stroke-width="2" stroke-linecap="round" fill="none"/><path d="M26 30 Q20 36 18 44" stroke="#00e5d6" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.8"/><path d="M26 30 Q26 38 24 46" stroke="#00e5d6" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.7"/><path d="M18 44 Q14 52 14 60" stroke="#00e5d6" stroke-width="1" stroke-linecap="round" fill="none" opacity="0.6"/><path d="M26 30 Q30 40 28 52" stroke="#00e5d6" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.65"/><path d="M44 18 Q50 22 54 30" stroke="#00e5d6" stroke-width="2" stroke-linecap="round" fill="none"/><path d="M54 30 Q60 36 62 44" stroke="#00e5d6" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.8"/><path d="M54 30 Q54 38 56 46" stroke="#00e5d6" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.7"/><path d="M62 44 Q66 52 66 60" stroke="#00e5d6" stroke-width="1" stroke-linecap="round" fill="none" opacity="0.6"/><path d="M54 30 Q50 40 52 52" stroke="#00e5d6" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.65"/>'},
+  {id:'05',name:'Endocrine &amp; Metabolic',sub:'Diabetes, thyroid, osteoporosis',bg:'linear-gradient(135deg,#0f001a,#280040)',svg:'<rect x="35" y="6" width="10" height="52" rx="5" fill="#9c27b0" opacity="0.9"/><rect x="28" y="14" width="24" height="36" rx="4" fill="none" stroke="white" stroke-width="2"/><rect x="33" y="26" width="14" height="12" rx="2" fill="#ce93d8" opacity="0.5"/><line x1="40" y1="58" x2="40" y2="72" stroke="white" stroke-width="3" stroke-linecap="round"/><line x1="22" y1="22" x2="28" y2="22" stroke="white" stroke-width="2.5" stroke-linecap="round"/><line x1="22" y1="32" x2="28" y2="32" stroke="white" stroke-width="2.5" stroke-linecap="round"/><line x1="22" y1="42" x2="28" y2="42" stroke="white" stroke-width="2.5" stroke-linecap="round"/><line x1="32" y1="6" x2="48" y2="6" stroke="white" stroke-width="2.5" stroke-linecap="round"/>'},
+  {id:'06',name:'Gastrointestinal Medicine',sub:'GORD, IBD, IBS, liver disease',bg:'linear-gradient(135deg,#001508,#012d10)',svg:'<path d="M30 16 Q14 16 12 34 Q10 50 22 60 Q30 68 40 66 Q54 64 62 52 Q70 40 64 28 Q58 14 44 16 Q40 18 38 26 Q36 18 30 16Z" fill="#43a047" opacity="0.9"/><path d="M38 26 Q32 40 35 54" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none"/>'},
+  {id:'07',name:'Infections &amp; Antimicrobials',sub:'Antibiotics, antivirals, antifungals',bg:'linear-gradient(135deg,#1a0800,#3d1800)',svg:'<path d="M40 8 L66 20 L66 46 Q66 64 40 74 Q14 64 14 46 L14 20 Z" fill="#ff7043" opacity="0.9"/><path d="M28 42 L37 51 L56 30" stroke="white" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>'},
+  {id:'08',name:'Central Nervous System',sub:"Depression, epilepsy, Parkinson's",bg:'linear-gradient(135deg,#1a000d,#3d0020)',svg:'<path d="M40 14 Q24 14 18 28 Q12 42 20 54 Q25 62 33 64 L33 68 L47 68 L47 64 Q55 62 60 54 Q68 42 62 28 Q56 14 40 14Z" fill="#e91e8c" opacity="0.85"/><line x1="40" y1="14" x2="40" y2="68" stroke="white" stroke-width="1.5" opacity="0.4"/><path d="M18 35 Q28 30 40 35 Q52 30 62 35" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M18 50 Q28 45 40 50 Q52 45 62 50" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>'},
+  {id:'09',name:'Pain Management',sub:'Opioids, analgesic ladder, neuropathic',bg:'linear-gradient(135deg,#1a1200,#3a2c00)',svg:'<path d="M50 8 L26 44 L44 44 L30 72 L60 32 L42 32 Z" fill="#fdd835" opacity="0.95"/>'},
+  {id:'10',name:'Renal Medicine',sub:'CKD, AKI, dialysis, dose adjustment',bg:'linear-gradient(135deg,#001614,#003330)',svg:'<path d="M30 12 Q12 12 10 32 Q8 52 22 62 Q32 70 40 60 Q44 52 40 44 Q36 36 42 28 Q48 22 52 34 Q56 48 50 58 Q46 68 56 68 Q68 66 70 50 Q74 30 62 20 Q52 10 40 12 Q34 12 30 12Z" fill="#00acc1" opacity="0.9"/>'},
+  {id:'11',name:'Musculoskeletal Medicine',sub:'Arthritis, osteoporosis, gout',bg:'linear-gradient(135deg,#080818,#151545)',svg:'<circle cx="18" cy="18" r="8" fill="#5c6bc0"/><circle cx="62" cy="62" r="8" fill="#5c6bc0"/><rect x="15" y="37" width="50" height="8" rx="4" fill="#5c6bc0" transform="rotate(45 40 41)"/><circle cx="62" cy="18" r="8" fill="#7986cb"/><circle cx="18" cy="62" r="8" fill="#7986cb"/><rect x="15" y="37" width="50" height="8" rx="4" fill="#7986cb" transform="rotate(-45 40 41)"/>'},
+  {id:'12',name:"Women's Health",sub:'Contraception, pregnancy, menopause',bg:'linear-gradient(135deg,#1a0010,#3d0028)',svg:'<circle cx="40" cy="30" r="18" fill="#e91e63" opacity="0.85"/><circle cx="40" cy="30" r="11" fill="#f48fb1" opacity="0.5"/><line x1="40" y1="48" x2="40" y2="68" stroke="white" stroke-width="3.5" stroke-linecap="round"/><line x1="29" y1="58" x2="51" y2="58" stroke="white" stroke-width="3.5" stroke-linecap="round"/>'},
+  {id:'13',name:'Haematology &amp; Oncology',sub:'Anaemia, anticoagulation, blood cancers',bg:'linear-gradient(135deg,#180000,#3a0000)',svg:'<path d="M40 10 Q22 34 22 50 Q22 66 40 68 Q58 66 58 50 Q58 34 40 10Z" fill="#c62828" opacity="0.9"/><path d="M30 48 Q40 40 50 48" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round"/><circle cx="40" cy="54" r="4" fill="white" opacity="0.6"/>'},
+  {id:'14',name:'Dermatology',sub:'Eczema, psoriasis, acne, skin infections',bg:'linear-gradient(135deg,#180c00,#3a2000)',svg:'<ellipse cx="40" cy="40" rx="30" ry="32" fill="#e64a19" opacity="0.6"/><ellipse cx="40" cy="40" rx="21" ry="23" fill="#ff7043" opacity="0.7"/><ellipse cx="40" cy="40" rx="13" ry="14" fill="#ff9800" opacity="0.85"/><circle cx="40" cy="40" r="5" fill="white" opacity="0.9"/>'},
+  {id:'15',name:'Clinical Pharmacy',sub:'Drug interactions, TDM, polypharmacy',bg:'linear-gradient(135deg,#001614,#002e2a)',svg:'<rect x="10" y="52" width="44" height="16" rx="8" fill="#00897b" opacity="0.5" transform="rotate(-30 32 60)"/><text x="40" y="50" text-anchor="middle" dominant-baseline="middle" fill="#00e5d6" font-size="36" font-weight="900" font-family="Georgia,serif">Rx</text>'}
 ];
+
+// Stripe payment links
+var STRIPE = {
+  1:'https://buy.stripe.com/dRm3co9ms8Jb7QVdsT5kk03',
+  2:'https://buy.stripe.com/aFa4gsaqw6B30otgF55kk04',
+  3:'https://buy.stripe.com/00wbIU7ekf7z0otagH5kk05',
+  4:'https://buy.stripe.com/9B65kwdCIgbDb37dsT5kk06',
+  5:'https://buy.stripe.com/4gMaEQ6ag7F74EJ4Wn5kk07',
+  bundle:'https://buy.stripe.com/3cIfZaaqwaRj9Z3gF55kk00'
+};
 
 var cart = {};
 
-function go(id){
-  document.querySelectorAll(".page").forEach(p=>p.classList.remove("active"));
-  document.getElementById(id).classList.add("active");
+// ── PAGE NAVIGATION ──
+function showMain(){
+  document.getElementById('main-page').style.display='block';
+  document.getElementById('topics-page').style.display='none';
+  document.getElementById('about-page').style.display='none';
+  window.scrollTo(0,0);
+}
+function showTopics(){
+  document.getElementById('main-page').style.display='none';
+  document.getElementById('topics-page').style.display='block';
+  document.getElementById('about-page').style.display='none';
+  buildTopicsGrid();
+  window.scrollTo(0,0);
+}
+function showAbout(){
+  document.getElementById('main-page').style.display='none';
+  document.getElementById('topics-page').style.display='none';
+  document.getElementById('about-page').style.display='block';
   window.scrollTo(0,0);
 }
 
-function checkout(){
-  alert("Proceed to checkout");
+// ── BUILD BROWSE GRID ──
+var gridBuilt = false;
+function buildTopicsGrid(){
+  if(gridBuilt) return;
+  gridBuilt = true;
+  var grid = document.getElementById('topics-grid');
+  grid.innerHTML = TOPICS.map(function(t){
+    return '<div class="tc" onclick="buyTopic(\''+t.id+'\',\''+t.name.replace(/&amp;/g,'and').replace(/'/g,"\\'")+'\')">' +
+      '<div class="tc-top" style="background:'+t.bg+'"><svg viewBox="0 0 80 80" fill="none">'+t.svg+'</svg></div>' +
+      '<div class="tc-label">' +
+        '<span class="tc-num">Topic '+t.id+'</span>' +
+        '<span class="tc-name">'+t.name+'</span>' +
+        '<span class="tc-sub">'+t.sub+'</span>' +
+        '<span class="tc-price">£5</span>' +
+      '</div>' +
+    '</div>';
+  }).join('');
 }
-</script>
 
+function buyTopic(id, name){
+  var url = STRIPE[1]+'?prefilled_custom_note='+encodeURIComponent('Topic '+id+' — '+name);
+  window.open(url,'_blank');
+}
+
+// ── BUILD DROPDOWN ──
+function buildDropdown(){
+  var panel = document.getElementById('dd-panel');
+  panel.innerHTML = TOPICS.map(function(t){
+    return '<div class="dropdown-option" id="opt-'+t.id+'" onclick="toggleOption(\''+t.id+'\',\''+t.name.replace(/&amp;/g,'and').replace(/'/g,"\\'")+'\')">' +
+      '<div class="option-cb"><span class="option-cb-tick">&#10003;</span></div>' +
+      '<div class="option-text">' +
+        '<span class="option-name">'+t.id+'. '+t.name+'</span>' +
+        '<span class="option-sub">'+t.sub+'</span>' +
+      '</div>' +
+    '</div>';
+  }).join('');
+}
+
+function toggleDropdown(){
+  var trigger = document.getElementById('dd-trigger');
+  var panel = document.getElementById('dd-panel');
+  trigger.classList.toggle('open');
+  panel.classList.toggle('open');
+}
+
+document.addEventListener('click',function(e){
+  var wrap = document.querySelector('.dropdown-wrap');
+  if(wrap && !wrap.contains(e.target)){
+    document.getElementById('dd-trigger').classList.remove('open');
+    document.getElementById('dd-panel').classList.remove('open');
+  }
+});
+
+function toggleOption(id, name){
+  var opt = document.getElementById('opt-'+id);
+  if(cart[id]){ delete cart[id]; opt.classList.remove('is-checked'); }
+  else { cart[id]=name; opt.classList.add('is-checked'); }
+  updateSummary();
+}
+
+function removeItem(id){
+  delete cart[id];
+  var opt = document.getElementById('opt-'+id);
+  if(opt) opt.classList.remove('is-checked');
+  updateSummary();
+}
+
+function updateSummary(){
+  var ids = Object.keys(cart).sort();
+  var count = ids.length;
+  var isBundle = count >= 6;
+  var total = isBundle ? 39 : count * 5;
+
+  // Label
+  var label = document.getElementById('dd-label');
+  if(count===0){ label.textContent='Select topics…'; label.classList.remove('has-selection'); }
+  else { label.textContent=count+' topic'+(count>1?'s':'')+' selected'; label.classList.add('has-selection'); }
+
+  // Summary box
+  var summary = document.getElementById('order-summary');
+  var rowsEl = document.getElementById('order-rows');
+  var totalEl = document.getElementById('order-total');
+  var bundleNote = document.getElementById('bundle-note');
+
+  if(count>0){
+    summary.classList.add('visible');
+    rowsEl.innerHTML = ids.map(function(id){
+      return '<div class="order-row">' +
+        '<span class="order-row-name">Topic '+id+' — '+cart[id]+'</span>' +
+        '<span class="order-row-price">'+(isBundle?'—':'£5')+'</span>' +
+        '<span class="order-row-x" onclick="removeItem(\''+id+'\')">&#x2715;</span>' +
+      '</div>';
+    }).join('');
+    totalEl.textContent='£'+total;
+    bundleNote.style.display = isBundle?'block':'none';
+  } else {
+    summary.classList.remove('visible');
+    bundleNote.style.display='none';
+  }
+
+  // Button
+  var btn = document.getElementById('checkout-btn');
+  if(count===0){ btn.disabled=true; btn.textContent='Select topics to continue'; }
+  else if(isBundle){ btn.disabled=false; btn.textContent='Get Complete Bundle — £39 \u2192'; }
+  else { btn.disabled=false; btn.textContent='Proceed to payment — £'+total+' \u2192'; }
+}
+
+function doCheckout(){
+  var ids = Object.keys(cart).sort();
+  var count = ids.length;
+  if(!count) return;
+  var names = ids.map(function(id){ return 'Topic '+id+' '+cart[id]; }).join(', ');
+  var url = count>=6 ? STRIPE.bundle : STRIPE[count];
+  window.open(url+'?prefilled_custom_note='+encodeURIComponent(names),'_blank');
+}
+
+// ── FAQ ──
+function toggleFaq(el){
+  var item = el.parentElement;
+  var wasOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(function(i){ i.classList.remove('open'); });
+  if(!wasOpen) item.classList.add('open');
+}
+
+// ── INIT ──
+buildDropdown();
+</script>
 </body>
 </html>
-
-
