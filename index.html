@@ -65,8 +65,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:99;display:flex;align-items:cent
 .price{font-family:"Playfair Display",serif;font-size:1.9rem;font-weight:700;color:var(--n);margin-bottom:.9rem;}
 .price span{font-size:.82rem;font-family:"DM Sans",sans-serif;color:var(--m);font-weight:400;}
 .save{display:inline-block;background:var(--tl);color:var(--t);font-size:.74rem;font-weight:600;padding:.18rem .6rem;border-radius:5px;margin-left:.4rem;vertical-align:middle;}
-.delivery{background:#fffbeb;border:1px solid #fde68a;border-radius:8px;padding:.8rem 1rem;margin-bottom:1rem;font-size:.8rem;color:#92400e;line-height:1.6;}
-.delivery strong{color:#78350f;}
+.delivery{background:var(--tl);border:1px solid rgba(0,169,157,.3);border-radius:8px;padding:.8rem 1rem;margin-bottom:1rem;font-size:.8rem;color:#065f59;line-height:1.6;}
+.delivery strong{color:#00a99d;}
 .dw{position:relative;margin-bottom:10px;z-index:50;}
 .dt{width:100%;padding:9px 12px;border:1.5px solid #d1d5db;border-radius:7px;font-size:.87rem;font-family:"DM Sans",sans-serif;background:var(--w);cursor:pointer;user-select:none;display:flex;align-items:center;justify-content:space-between;transition:border-color .2s;}
 .dt:hover,.dt.open{border-color:var(--t);}
@@ -103,7 +103,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:99;display:flex;align-items:cent
 .faq-list{max-width:680px;margin:0 auto;}
 .fi{border-bottom:1px solid #ebebeb;}
 .fq{display:flex;align-items:center;justify-content:space-between;padding:1.1rem 0;cursor:pointer;font-weight:600;color:var(--n);font-size:.92rem;gap:1rem;}
-.fic{color:var(--t);font-size:1.1rem;transition:transform .2s;}
+  .fic{color:var(--t);font-size:1.1rem;transition:transform .2s;}
 .fi.open .fic{transform:rotate(45deg);}
 .fa{max-height:0;overflow:hidden;transition:max-height .3s;color:var(--m);font-size:.88rem;line-height:1.8;}
 .fi.open .fa{max-height:200px;padding-bottom:1rem;}
@@ -155,6 +155,41 @@ footer{background:var(--n);color:rgba(255,255,255,.45);padding:2rem 5%;display:f
 .acta h2{font-family:"Playfair Display",serif;color:white;font-size:1.7rem;margin-bottom:.7rem;}
 .acta p{color:rgba(255,255,255,.45);margin-bottom:1.3rem;}
 @media(max-width:720px){.hero{grid-template-columns:1fr;padding:5.5rem 5% 3rem;}.grid2{grid-template-columns:1fr;}.profile{grid-template-columns:1fr;}.btn-ghost{margin-left:0;margin-top:.7rem;display:block;text-align:center;}.bbar{flex-direction:column;text-align:center;}.tgrid{grid-template-columns:repeat(auto-fill,minmax(145px,1fr));}.nav-links{gap:1rem;}}
+.qzc{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:1.8rem;display:none;}
+.qzc.qza{display:block;animation:qzf .35s ease;}
+@keyframes qzf{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:translateY(0);}}
+.qz-meta{display:flex;gap:.5rem;margin-bottom:1rem;}
+.qz-num{background:var(--t);color:var(--w);font-size:.7rem;font-weight:700;padding:.2rem .65rem;border-radius:100px;}
+.qz-top{background:rgba(255,255,255,.1);color:rgba(255,255,255,.7);font-size:.7rem;font-weight:600;padding:.2rem .65rem;border-radius:100px;}
+.qz-q{font-size:.98rem;font-weight:600;color:var(--w);line-height:1.65;margin-bottom:1.2rem;}
+.qz-opts{display:flex;flex-direction:column;gap:.6rem;}
+.qz-o{display:flex;align-items:flex-start;gap:.8rem;padding:.8rem 1rem;border:1.5px solid rgba(255,255,255,.12);border-radius:10px;cursor:pointer;transition:all .2s;background:rgba(255,255,255,.03);}
+.qz-o:hover:not(.qzd){border-color:var(--t);background:rgba(0,169,157,.1);}
+.qz-l{width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.1);color:rgba(255,255,255,.6);font-size:.75rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .2s;}
+.qz-ot{font-size:.88rem;color:rgba(255,255,255,.8);line-height:1.5;padding-top:3px;}
+.qz-o.qzs{border-color:var(--w);background:rgba(255,255,255,.08);}.qz-o.qzs .qz-l{background:var(--w);color:var(--n);}
+.qz-o.qzcor{border-color:#34d399;background:rgba(5,150,105,.2);}.qz-o.qzcor .qz-l{background:#34d399;color:var(--n);}
+.qz-o.qzwrg{border-color:#f87171;background:rgba(220,38,38,.2);}.qz-o.qzwrg .qz-l{background:#f87171;color:var(--w);}
+.qz-o.qzshw{border-color:#34d399;background:rgba(5,150,105,.15);}.qz-o.qzshw .qz-l{background:#34d399;color:var(--n);}
+.qz-o.qzd{cursor:default;}
+.qzsub{width:100%;padding:.75rem;background:var(--t);color:var(--w);border:none;border-radius:9px;font-size:.9rem;font-weight:700;cursor:pointer;font-family:"DM Sans",sans-serif;margin-top:1rem;transition:all .2s;display:none;}
+.qzsub.qzv{display:block;}.qzsub:hover{background:#008f84;}
+.qzexp{margin-top:1rem;padding:1rem 1.1rem;border-radius:10px;display:none;animation:qzf .3s ease;}
+.qzexp.qzec{background:rgba(5,150,105,.15);border-left:4px solid #34d399;}
+.qzexp.qzew{background:rgba(220,38,38,.15);border-left:4px solid #f87171;}
+.qzexh{display:flex;align-items:center;gap:.4rem;font-weight:700;font-size:.9rem;margin-bottom:.4rem;}
+.qzext{font-size:.84rem;line-height:1.7;color:rgba(255,255,255,.8);}
+.qzextp{margin-top:.5rem;font-size:.8rem;font-weight:600;color:var(--tb);}
+.qznxt{width:100%;padding:.75rem;background:rgba(255,255,255,.1);color:var(--w);border:1.5px solid rgba(255,255,255,.2);border-radius:9px;font-size:.9rem;font-weight:700;cursor:pointer;font-family:"DM Sans",sans-serif;margin-top:.7rem;transition:all .2s;display:none;}
+.qznxt.qzv{display:block;}.qznxt:hover{background:rgba(255,255,255,.15);}
+.qzres{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:2rem;text-align:center;display:none;animation:qzf .4s ease;}
+.qzrsc{font-family:"Playfair Display",serif;font-size:3rem;font-weight:700;color:var(--tb);margin:.8rem 0 .2rem;}
+.qzrsb{color:rgba(255,255,255,.5);font-size:.9rem;margin-bottom:1.2rem;}
+.qzrcta{background:rgba(0,169,157,.15);border:1px solid rgba(0,169,157,.35);border-radius:12px;padding:1rem;margin:1rem 0;}
+.qzrcta p{color:rgba(255,255,255,.7);font-size:.85rem;margin-bottom:.7rem;line-height:1.6;}
+.qzrcta a{display:inline-block;background:var(--t);color:var(--w);padding:.6rem 1.4rem;border-radius:7px;font-weight:700;font-size:.85rem;text-decoration:none;}
+.qzrty{width:100%;padding:.7rem;background:transparent;color:rgba(255,255,255,.5);border:1.5px solid rgba(255,255,255,.15);border-radius:9px;font-size:.85rem;font-weight:600;cursor:pointer;font-family:"DM Sans",sans-serif;margin-top:.5rem;transition:all .2s;}
+.qzrty:hover{border-color:rgba(255,255,255,.35);color:var(--w);}
 </style>
 </head>
 <body>
@@ -165,6 +200,7 @@ footer{background:var(--n);color:rgba(255,255,255,.45);padding:2rem 5%;display:f
     <li><a onclick="go('home')">Home</a></li>
     <li><a onclick="go('browse')">Browse All</a></li>
     <li><a onclick="go('about')">About</a></li>
+    <li><a href="/quiz.html" style="color:var(--t);font-weight:600;">Free Quiz</a></li>
     <li><a href="mailto:primenotesedu@gmail.com" class="nav-btn">Contact</a></li>
   </ul>
 </nav>
@@ -174,7 +210,8 @@ footer{background:var(--n);color:rgba(255,255,255,.45);padding:2rem 5%;display:f
     <h1>Pass Your GPhC.<br><i>First Time.</i></h1>
     <p>Revision notes written by a practising pharmacist &mdash; clinically accurate, exam-focused, built around the GPhC 2026 blueprint.</p>
     <a class="btn" onclick="go('browse')">Browse All 15 Topics &rarr;</a>
-    <a class="btn-ghost" href="https://primenotes.gumroad.com/l/completebundle" target="_blank">Full Bundle &mdash; &pound;39</a>
+    <a class="btn-ghost" href="https://primenotes.gumroad.com/l/Completebundle" target="_blank">Full Bundle &mdash; &pound;39</a>
+    <a href="/quiz.html" style="display:inline-block;margin-top:.7rem;color:var(--tb);font-size:.88rem;font-weight:600;text-decoration:none;">&#9654; Try 10 free practice questions</a>
   </div>
   <div class="hero-card">
     <div class="stats">
@@ -195,6 +232,24 @@ footer{background:var(--n);color:rgba(255,255,255,.45);padding:2rem 5%;display:f
   <div class="ti"><span>&#10003;</span> Instant download after payment</div>
   <div class="ti"><span>&#10003;</span> 15 topics covered</div>
 </div>
+<section style="background:var(--n);padding:4.5rem 5%;" id="quiz-section">
+  <div style="text-align:center;margin-bottom:2.5rem;">
+    <div class="slbl" style="color:var(--tb);">Free Practice</div>
+    <div class="stitle" style="color:var(--w);">Test Your Knowledge</div>
+    <p style="color:rgba(255,255,255,0.5);font-size:.95rem;max-width:480px;margin:.5rem auto 0;">10 GPhC-style questions across all 15 topics. Pick your answer and get instant feedback.</p>
+    <p id="qz-attempts" style="color:rgba(255,255,255,0.25);font-size:.75rem;margin-top:.5rem;"></p>
+  </div>
+  <div style="max-width:680px;margin:0 auto 1.5rem;">
+    <div style="display:flex;justify-content:space-between;margin-bottom:.5rem;">
+      <span id="qz-label" style="font-size:.82rem;font-weight:600;color:rgba(255,255,255,.5);">Question 1 of 10</span>
+      <span id="qz-score" style="font-size:.82rem;font-weight:700;color:var(--tb);">Score: 0</span>
+    </div>
+    <div style="height:6px;background:rgba(255,255,255,.1);border-radius:100px;overflow:hidden;">
+      <div id="qz-fill" style="height:100%;background:linear-gradient(90deg,var(--t),var(--tb));border-radius:100px;width:0%;transition:width .4s;"></div>
+    </div>
+  </div>
+  <div id="qz-main" style="max-width:680px;margin:0 auto;"></div>
+</section>
 <section class="section">
   <div class="grid2">
     <div>
@@ -264,7 +319,7 @@ footer{background:var(--n);color:rgba(255,255,255,.45);padding:2rem 5%;display:f
         <div class="pcard-body">
           <div class="price">&pound;39 <span>all 15 topics</span><span class="save">Save &pound;36</span></div>
           <div class="delivery"><strong>Delivery:</strong> Instant download — your PDF will be available immediately after payment.</div>
-          <a href="https://primenotes.gumroad.com/l/completebundle" target="_blank" class="btn" style="display:block;text-align:center;width:100%;padding:.8rem;">Get Complete Bundle &mdash; &pound;39 &rarr;</a>
+          <a href="https://primenotes.gumroad.com/l/Completebundle" target="_blank" class="btn" style="display:block;text-align:center;width:100%;padding:.8rem;">Get Complete Bundle &mdash; &pound;39 &rarr;</a>
         </div>
       </div>
     </div>
@@ -278,6 +333,7 @@ footer{background:var(--n);color:rgba(255,255,255,.45);padding:2rem 5%;display:f
     <div class="fi"><div class="fq" onclick="faq(this)">Who wrote the notes? <span class="fic">+</span></div><div class="fa">Kamini Chauhan, a qualified community pharmacist with 11 years of clinical experience.</div></div>
     <div class="fi"><div class="fq" onclick="faq(this)">Can I buy individual topics? <span class="fic">+</span></div><div class="fa">Yes &mdash; each topic is &pound;5. Selecting 6 or more automatically upgrades to the full bundle at &pound;39.</div></div>
     <div class="fi"><div class="fq" onclick="faq(this)">Can I get a refund? <span class="fic">+</span></div><div class="fa">As these are digital products, refunds cannot be offered once PDFs have been delivered. Contact primenotesedu@gmail.com with any concerns.</div></div>
+    <div class="fi"><div class="fq" onclick="faq(this)">Why is the checkout price slightly different to the advertised price? <span class="fic">+</span></div><div class="fa">Our payment processor operates in USD. All prices are advertised in GBP and the checkout price is converted automatically. The difference is minimal &mdash; typically a few pence &mdash; and no additional charges are applied.</div></div>
   </div>
 </section>
 <section class="contact">
@@ -299,12 +355,11 @@ footer{background:var(--n);color:rgba(255,255,255,.45);padding:2rem 5%;display:f
 </nav>
 <div class="browse-hero"><div class="slbl" style="display:block;">All Topics</div><h1>Browse All 15 Topics</h1><p>Click any topic to purchase for &pound;5, or get all 15 for &pound;39.</p></div>
 <div class="tgrid" id="tgrid"></div>
-<div class="bbar"><div><h3>Get all 15 topics for &pound;39</h3><p>Save &pound;36 compared to buying individually.</p></div><a href="https://primenotes.gumroad.com/l/completebundle" target="_blank" class="btn">Get Bundle &mdash; &pound;39 &rarr;</a></div>
+<div class="bbar"><div><h3>Get all 15 topics for &pound;39</h3><p>Save &pound;36 compared to buying individually.</p></div><a href="https://primenotes.gumroad.com/l/Completebundle" target="_blank" class="btn">Get Bundle &mdash; &pound;39 &rarr;</a></div>
 <footer style="background:rgba(255,255,255,.04);border-top:1px solid rgba(255,255,255,.08);color:rgba(255,255,255,.4);padding:1.8rem 5%;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
   <div class="fl">Pass<b>Rx</b></div><div class="flinks"><a onclick="go('home')">Home</a><a href="mailto:primenotesedu@gmail.com">Contact</a></div><div style="font-size:.78rem;">&copy; 2026 PassRx</div>
 </footer>
 </div>
-
 <div id="about" class="page">
 <nav><div class="logo" onclick="go('home')">Pass<b>Rx</b></div><ul class="nav-links"><li><a onclick="go('home')">Home</a></li><li><a onclick="go('browse')">Browse All</a></li><li><a onclick="go('about')" style="color:var(--n);font-weight:600;">About</a></li><li><a href="mailto:primenotesedu@gmail.com" class="nav-btn">Contact</a></li></ul></nav>
 <div class="about-hero"><div class="slbl">About</div><h1>Meet Your<br><i>Pharmacist.</i></h1><p>PassRx was built by a practising pharmacist who understands exactly what the GPhC Registration Assessment demands.</p></div>
@@ -328,10 +383,9 @@ footer{background:var(--n);color:rgba(255,255,255,.45);padding:2rem 5%;display:f
     <div class="wcard"><div class="wi">&#10003;</div><div class="wt">Up to Date</div><div class="wb">Cross-referenced against NICE guidelines, the BNF, and the GPhC 2026 framework.</div></div>
   </div>
 </div>
-<div class="acta"><h2>Ready to Start Revising?</h2><p>Browse all 15 topics or get the complete bundle.</p><a onclick="go('browse')" class="btn" style="margin-right:.8rem;">Browse Topics &rarr;</a><a href="https://primenotes.gumroad.com/l/completebundle" target="_blank" class="btn-ghost">Full Bundle &mdash; &pound;39</a></div>
+<div class="acta"><h2>Ready to Start Revising?</h2><p>Browse all 15 topics or get the complete bundle.</p><a onclick="go('browse')" class="btn" style="margin-right:.8rem;">Browse Topics &rarr;</a><a href="https://primenotes.gumroad.com/l/Completebundle" target="_blank" class="btn-ghost">Full Bundle &mdash; &pound;39</a></div>
 <footer><div class="fl">Pass<b>Rx</b></div><div class="flinks"><a onclick="go('home')">Home</a><a onclick="go('browse')">Browse All</a><a href="mailto:primenotesedu@gmail.com">Contact</a></div><div style="font-size:.78rem;">&copy; 2026 PassRx</div></footer>
 </div>
-
 <script>
 var TT=[
 {i:"01",n:"Cardiovascular Medicine",s:"Heart failure, ACS, hypertension, AF",g:"linear-gradient(135deg,#1a0505,#3d0f0f)",v:'<path d="M40 68S10 50 10 28a16 16 0 0 1 30-6 16 16 0 0 1 30 6c0 22-30 40-30 40z" fill="#ef5350"/><path d="M20 36h8l5-10 8 20 5-10h14" stroke="white" stroke-width="2.5" stroke-linecap="round"/>'},
@@ -363,14 +417,57 @@ function rem(id){delete cart[id];var el=document.getElementById("dd"+id);if(el)e
 function upd(){var ids=Object.keys(cart).sort();var n=ids.length;var ib=n>=6;var tot=ib?39:n*5;var lbl=document.getElementById("ddl");lbl.textContent=n===0?"Select topics...":n+" topic"+(n>1?"s":"")+" selected";lbl.className="dl"+(n>0?" s":"");var box=document.getElementById("osb");var rows=document.getElementById("orows");var totEl=document.getElementById("otot");var note=document.getElementById("bnn");if(n>0){box.className="os-box v";var html="";ids.forEach(function(id){html+='<div class="or"><span class="orn">Topic '+id+' - '+cart[id]+'</span><span class="orp">'+(ib?"-":"£5")+'</span><span class="orx" data-id="'+id+'">&#x2715;</span></div>';});rows.innerHTML=html;rows.querySelectorAll(".orx").forEach(function(x){x.onclick=function(){rem(x.getAttribute("data-id"));};});totEl.textContent="£"+tot;note.style.display=ib?"block":"none";}else{box.className="os-box";note.style.display="none";}var btn=document.getElementById("cob");if(n===0){btn.disabled=true;btn.textContent="Select topics to continue";}else{btn.disabled=false;btn.textContent="Buy Now — £"+tot;}}
 function checkout(){var ids=Object.keys(cart).sort();var n=ids.length;if(n===0)return;if(n>=6){window.open(ST.b,"_blank");}else if(n===1){window.open(ST[parseInt(ids[0])],"_blank");}else{window.open(ST.b,"_blank");}}
 function faq(el){var fi=el.parentElement;fi.classList.toggle("open");}
-window.onload=function(){buildDD();};
-
-// WhatsApp Floating Button CSS
+var QQ=[
+{t:"CNS",q:"A patient on lithium presents with coarse tremor, vomiting and confusion. Lithium level is 1.8 mmol/L. What is the most appropriate immediate action?",o:["Reduce lithium dose by 50%","Stop lithium immediately and seek urgent medical help","Add propranolol for the tremor","Continue and recheck in 48 hours"],c:1,e:"Levels above 1.5 mmol/L indicate toxicity. Coarse tremor, vomiting and confusion are classic signs. Stop lithium immediately and seek urgent help. IV fluids and monitoring required. Dialysis if >2.0 mmol/L.",tip:"★ Fine tremor = manageable. Coarse tremor = toxicity = STOP."},
+{t:"Renal",q:"Which drug must be withheld in acute kidney injury (AKI)?",o:["Amlodipine","Metformin","Atorvastatin","Lansoprazole"],c:1,e:"SADMAN: Sulphonylureas, ACEi, Diuretics, Metformin, ARBs, NSAIDs. Metformin accumulates with reduced renal clearance, increasing lactic acidosis risk.",tip:"★ SADMAN comes up every year in the GPhC exam."},
+{t:"Cardiovascular",q:"A patient with AF and a mechanical mitral valve needs anticoagulation. Which agent is most appropriate?",o:["Apixaban","Rivaroxaban","Warfarin","Dabigatran"],c:2,e:"DOACs are NOT licensed for mechanical heart valves. Warfarin remains the only appropriate agent, target INR 2.5-3.5 for a mechanical mitral valve.",tip:"★ Mechanical valves = always warfarin. DOACs are contraindicated."},
+{t:"Infections",q:"A patient given amoxicillin for a sore throat develops a widespread maculopapular rash. Most likely explanation?",o:["True penicillin allergy","Glandular fever — amoxicillin should never have been given","Viral exanthem unrelated to drug","Stevens-Johnson Syndrome"],c:1,e:"In glandular fever (EBV), amoxicillin causes a florid rash in 80-100% of patients. Always exclude glandular fever before prescribing amoxicillin for a sore throat.",tip:"★ Never give amoxicillin for sore throat without excluding glandular fever."},
+{t:"Endocrine",q:"Under NICE NG28 (February 2026), what is now first-line for most newly diagnosed Type 2 diabetes patients?",o:["Metformin monotherapy","Metformin MR + SGLT2 inhibitor","SGLT2 inhibitor monotherapy","Metformin + sulphonylurea"],c:1,e:"February 2026 NICE NG28 changed first-line T2DM treatment. Metformin MR combined with an SGLT2 inhibitor is now recommended for most patients.",tip:"★ Big 2026 change — metformin MR + SGLT2i is now first line."},
+{t:"Respiratory",q:"A patient with asthma is prescribed a SABA alone. Per BTS/NICE/SIGN 2024, what should be co-prescribed?",o:["A LABA","An inhaled corticosteroid (ICS)","An oral corticosteroid","A leukotriene receptor antagonist"],c:1,e:"The 2024 guideline states SABAs should no longer be prescribed alone for asthma. All patients need an ICS. ICS/formoterol can be used as both reliever and preventer.",tip:"★ SABA alone in asthma = no longer acceptable. Always with ICS."},
+{t:"Law & Ethics",q:"Under what circumstance could you disclose a patient's HIV diagnosis without consent?",o:["If a family member asks","If patient is over 65","If there is a serious and identifiable risk of harm to a third party","You can never disclose without consent"],c:2,e:"Confidentiality is not absolute. Disclosure without consent may be justified if there is a serious, identifiable risk of harm to a third party. Must be proportionate and necessary.",tip:"★ Confidentiality = absolute unless serious, identifiable, imminent risk of harm."},
+{t:"CNS",q:"A patient on clozapine develops a sore throat and fever. Most important immediate action?",o:["Prescribe antibiotics empirically","Stop clozapine and arrange urgent FBC","Reduce the dose","Advise throat lozenges and review in 48 hours"],c:1,e:"Clozapine has mandatory FBC monitoring due to agranulocytosis risk. Stop immediately and arrange urgent FBC. Do not restart until confirmed safe.",tip:"★ Sore throat on clozapine = STOP immediately + urgent FBC."},
+{t:"Calculations",q:"500mL IV infusion over 4 hours, standard giving set (20 drops/mL). Drip rate in drops per minute?",o:["20 drops/min","42 drops/min","125 drops/min","35 drops/min"],c:1,e:"(Volume x Drop factor) / Time in minutes = (500 x 20) / 240 = 41.67 = 42 drops/min. Standard = 20, paediatric = 60, blood = 15 drops/mL.",tip:"★ Always confirm drop factor from the question. Standard = 20."},
+{t:"Haematology",q:"A patient on warfarin is prescribed metronidazole. Expected effect on INR?",o:["INR falls — increase warfarin","INR rises significantly — reduce warfarin and monitor closely","No significant interaction","INR falls — stop metronidazole"],c:1,e:"Metronidazole is a potent CYP2C9 inhibitor — significantly raises INR. Warfarin dose will likely need reducing and INR should be checked more frequently.",tip:"★ Metronidazole + warfarin = INR rises dramatically. Always flag and monitor."}
+];
+var QC=0,QS=0,QSL={},QA={};
+function qzInit(){
+  var m=document.getElementById("qz-main");
+  if(!m)return;
+  m.innerHTML="";
+  var L=["A","B","C","D"];
+  QQ.forEach(function(q,i){
+    var opts=q.o.map(function(o,oi){return'<div class="qz-o" id="qzo'+i+'x'+oi+'" onclick="qzSel('+i+','+oi+')"><div class="qz-l">'+L[oi]+'</div><div class="qz-ot">'+o+'</div></div>';}).join("");
+    var d=document.createElement("div");
+    d.className="qzc"+(i===0?" qza":""); d.id="qzc"+i;
+    d.innerHTML='<div class="qz-meta"><span class="qz-num">Q'+(i+1)+'</span><span class="qz-top">'+q.t+'</span></div><div class="qz-q">'+q.q+'</div><div class="qz-opts">'+opts+'</div><button class="qzsub" id="qzsb'+i+'" onclick="qzSub('+i+')">Check Answer</button><div class="qzexp" id="qzep'+i+'"><div class="qzexh"><span id="qzeh'+i+'"></span><span id="qzet'+i+'"></span></div><div class="qzext" id="qzex'+i+'"></div><div class="qzextp" id="qztp'+i+'"></div></div><button class="qznxt" id="qznx'+i+'" onclick="qzNx('+i+')">'+(i<9?"Next Question &rarr;":"See Results &rarr;")+'</button>';
+    m.appendChild(d);
+  });
+  var r=document.createElement("div"); r.className="qzres"; r.id="qzres";
+  r.innerHTML='<div style="font-size:2.8rem;margin-bottom:.8rem;" id="qzrem">&#127881;</div><h3 style="font-family:Playfair Display,serif;font-size:1.6rem;color:var(--w);margin-bottom:.3rem;" id="qzrtl">Quiz Complete!</h3><div class="qzrsc" id="qzrsc">0/10</div><div class="qzrsb" id="qzrsb"></div><div class="qzrcta"><p>Want full notes? PassRx has 15 GPhC 2026 revision PDFs from just &pound;5.</p><a href="https://primenotes.gumroad.com/l/Completebundle" target="_blank">Get your notes &rarr;</a></div><button class="qzrty" onclick="qzRty()">&#8635; Try Again</button>';
+  m.appendChild(r);
+  qzProg();
+}
+function qzSel(qi,oi){if(QA[qi])return;QQ[qi].o.forEach(function(_,i){document.getElementById("qzo"+qi+"x"+i).classList.remove("qzs");});document.getElementById("qzo"+qi+"x"+oi).classList.add("qzs");QSL[qi]=oi;document.getElementById("qzsb"+qi).classList.add("qzv");}
+function qzSub(qi){if(QA[qi]||QSL[qi]===undefined)return;QA[qi]=true;var c=QQ[qi].c,ch=QSL[qi],ok=ch===c;if(ok)QS++;QQ[qi].o.forEach(function(_,i){var e=document.getElementById("qzo"+qi+"x"+i);e.classList.add("qzd");e.classList.remove("qzs");if(i===c)e.classList.add(ok?"qzcor":"qzshw");if(i===ch&&!ok)e.classList.add("qzwrg");});var ep=document.getElementById("qzep"+qi);ep.className="qzexp "+(ok?"qzec":"qzew");ep.style.display="block";document.getElementById("qzeh"+qi).textContent=ok?"✓ ":"✗ ";document.getElementById("qzet"+qi).textContent=ok?"Correct!":"Incorrect";document.getElementById("qzet"+qi).style.color=ok?"#34d399":"#f87171";document.getElementById("qzex"+qi).textContent=QQ[qi].e;document.getElementById("qztp"+qi).textContent=QQ[qi].tip;document.getElementById("qzsb"+qi).classList.remove("qzv");document.getElementById("qznx"+qi).classList.add("qzv");qzProg();}
+function qzNx(qi){document.getElementById("qzc"+qi).classList.remove("qza");if(qi<9){document.getElementById("qzc"+(qi+1)).classList.add("qza");QC=qi+1;}else{qzIncrCount();var r=document.getElementById("qzres");r.style.display="block";var p=QS/10*100,e,tl,sb;if(p>=80){e="&#127881;";tl="Excellent work!";sb="You clearly know your GPhC topics!";}else if(p>=60){e="&#128170;";tl="Good effort!";sb="Solid foundation — keep revising!";}else if(p>=40){e="&#128218;";tl="Keep going!";sb="Some gaps to fill — check the explanations.";}else{e="&#128260;";tl="More revision needed";sb="Review the explanations and try again.";}document.getElementById("qzrem").innerHTML=e;document.getElementById("qzrtl").textContent=tl;document.getElementById("qzrsc").textContent=QS+"/10";document.getElementById("qzrsb").textContent=sb;}qzProg();document.getElementById("quiz-section").scrollIntoView({behavior:"smooth",block:"start"});}
+function qzProg(){var done=Object.keys(QA).length;document.getElementById("qz-label").textContent="Question "+(QC+1)+" of 10";document.getElementById("qz-score").textContent="Score: "+QS;document.getElementById("qz-fill").style.width=(done/10*100)+"%";}
+function qzRty(){QC=0;QS=0;QSL={};QA={};document.getElementById("qzres").style.display="none";qzInit();}
+document.addEventListener("DOMContentLoaded",function(){buildDD();qzInit();qzLoadCount();});
+function qzLoadCount(){
+  fetch("https://api.countapi.xyz/get/passrx/quiz-attempts")
+    .then(function(r){return r.json();})
+    .then(function(d){
+      var el=document.getElementById("qz-attempts");
+      if(el&&d.value>0){el.textContent=d.value+" pre-regs have attempted this quiz";}
+    }).catch(function(){});
+}
+function qzIncrCount(){
+  fetch("https://api.countapi.xyz/hit/passrx/quiz-attempts").catch(function(){});
+}
 var waStyle=document.createElement("style");
 waStyle.innerHTML='.whatsapp-float{position:fixed;bottom:28px;right:28px;z-index:9999;display:flex;align-items:center;gap:0;cursor:pointer;text-decoration:none;}.whatsapp-float .wa-label{background:#fff;color:#1a3560;font-size:.82rem;font-weight:600;padding:10px 16px 10px 18px;border-radius:50px 0 0 50px;box-shadow:-4px 4px 16px rgba(0,0,0,.13);white-space:nowrap;opacity:0;transform:translateX(10px);transition:opacity .3s ease,transform .3s ease;pointer-events:none;}.whatsapp-float:hover .wa-label{opacity:1;transform:translateX(0);pointer-events:auto;}.whatsapp-float .wa-icon{width:58px;height:58px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 22px rgba(37,211,102,.45);transition:transform .2s ease,box-shadow .2s ease;animation:wa-pulse 2.5s infinite;flex-shrink:0;}.whatsapp-float:hover .wa-icon{transform:scale(1.1);box-shadow:0 8px 28px rgba(37,211,102,.55);}.whatsapp-float .wa-icon svg{width:32px;height:32px;}@keyframes wa-pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.55);}70%{box-shadow:0 0 0 14px rgba(37,211,102,0);}100%{box-shadow:0 0 0 0 rgba(37,211,102,0);}}';
 document.head.appendChild(waStyle);
 </script>
-
 <a class="whatsapp-float" href="https://wa.me/97477073562?text=Hi%20Kami%2C%20I%20found%20PassRx%20and%20I%27d%20like%20to%20know%20more%20about%20your%20revision%20notes!" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
   <span class="wa-label">Chat with us on WhatsApp</span>
   <span class="wa-icon">
@@ -380,6 +477,5 @@ document.head.appendChild(waStyle);
     </svg>
   </span>
 </a>
-
 </body>
 </html>
